@@ -1,28 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Bootstrap 101 Template</title>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Hugebag</title>
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-</head>
-<body>
-<h1>Hello, world!</h1>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-</body>
+    <style>
+      body {
+        position: relative;
+        top: 50px;
+        text-align: center;
+      }
+
+      .navbar-inverse {
+        background-color: #7B479C;
+      }
+
+      .navbar-inverse .navbar-nav > .active > a,
+      .navbar-inverse .navbar-nav > .active > a:focus,
+      .navbar-inverse .navbar-nav > .active > a:hover {
+        background-color: #6B479C;
+      }
+
+      .navbar-inverse .navbar-nav > li > a {
+        color: white;
+      }
+
+      .navbar-inverse .navbar-nav > li > a:hover {
+        background-color: #6B479C;
+      }
+
+      .navbar-brand, .navbar-nav li a {
+        line-height: 80px;
+        height: 80px;
+        padding-top: 0;
+      }
+
+      footer {
+        margin-top: 3em;
+        background-color: #7B479C;
+        color: white;
+        height: 4em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if yodu view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="12">
+    <div class="container-fluid">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" rel="home" href="#">
+              <img src="img/hugebag.png" alt="Hugebag" style="height: 65px; padding-top: 15px;" />
+            </a>
+          </div>
+          <div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="#what">What?</a></li>
+                <li><a href="#why">Why?</a></li>
+                <li><a href="#how">How?</a></li>
+                <li><a href="#interested">Interested?</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="jumbotron row">
+        <h1>Hugebag</h1>
+
+        <p>
+          Tailor-made <abbr data-toggle="tooltip" title="Enterprise Resource Management">ERP</abbr> web application
+          for small & medium-sized businesses </p>
+      </div>
+
+      <div id="what" class="row">
+        <div class="page-header">
+          <h2>What?</h2>
+        </div>
+        <p>
+          <mark>
+            Hugebag specializes in building <abbr title="Enterprise Resource Management">ERP</abbr> web application
+            for small and medium-sized businesses
+          </mark>
+        </p>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="jumbotron">Does your business have headaches like these?</div>
+          </div>
+          <div class="col-sm-6">
+            <div class="list-group" style="text-align: left;">
+              <h3 class="list-group-item-heading">
+                Operation bottlenecks served by human labor </h3>
+
+              <p class="list-group-item-text">
+                While you know that software can serve them efficiently </p>
+
+              <h3 class="list-group-item-heading">
+                Problems resulted from human mistake </h3>
+
+              <p class="list-group-item-text">
+                While you know that software could have prevented them </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="why" class="row">
+        <div class="page-header">
+          <h2>Why?</h2>
+        </div>
+
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+          rem
+          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+          explicabo.
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+          dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+          sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+          magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+          suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui
+          in
+          ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
+          nulla pariatur? </p>
+      </div>
+
+      <div id="how" class="row">
+        <div class="page-header">
+          <h2>How?</h2>
+        </div>
+
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+          dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+          sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+          magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+          suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
+          ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
+          nulla pariatur? </p>
+      </div>
+
+      <div id="interested" class="row">
+        <div class="page-header">
+          <h2>Interested?</h2>
+        </div>
+        <a href="mailto:consult@hugebag.com"><span class="glyphicon glyphicon-envelope"></span>
+          consult@hugebag.com</a>
+      </div>
+
+      <footer class="footer row">
+        Copyright&nbsp;&nbsp;<span class="glyphicon glyphicon-copyright-mark"></span>&nbsp;&nbsp;Hugebag 2015
+      </footer>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
 </html>

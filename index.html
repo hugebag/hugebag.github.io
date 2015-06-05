@@ -10,48 +10,7 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
-    <style>
-      body {
-        position: relative;
-        top: 50px;
-        text-align: center;
-      }
-
-      .navbar-inverse {
-        background-color: #7B479C;
-      }
-
-      .navbar-inverse .navbar-nav > .active > a,
-      .navbar-inverse .navbar-nav > .active > a:focus,
-      .navbar-inverse .navbar-nav > .active > a:hover {
-        background-color: #6B479C;
-      }
-
-      .navbar-inverse .navbar-nav > li > a {
-        color: white;
-      }
-
-      .navbar-inverse .navbar-nav > li > a:hover {
-        background-color: #6B479C;
-      }
-
-      .navbar-brand, .navbar-nav li a {
-        line-height: 80px;
-        height: 80px;
-        padding-top: 0;
-      }
-
-      footer {
-        margin-top: 3em;
-        background-color: #7B479C;
-        color: white;
-        height: 4em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    </style>
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if yodu view the page via file:// -->
@@ -70,17 +29,19 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" rel="home" href="#">
-              <img src="img/hugebag.png" alt="Hugebag" style="height: 65px; padding-top: 15px;" />
+              <img src="img/hugebag.png" alt="Hugebag" style="height: 60px; margin-top: 15px;"/>
             </a>
           </div>
           <div>
-            <div class="collapse navbar-collapse" id="myNavbar">
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
               <ul class="nav navbar-nav">
                 <li><a href="#what">What?</a></li>
                 <li><a href="#why">Why?</a></li>
                 <li><a href="#how">How?</a></li>
+                <li><a href="#technology">Technology?</a></li>
                 <li><a href="#interested">Interested?</a></li>
               </ul>
             </div>
@@ -88,8 +49,8 @@
         </div>
       </nav>
 
-      <div class="jumbotron row">
-        <h1>Hugebag</h1>
+      <div class="jumbotron row" style="margin-bottom: 0;">
+        <h1>Automate Your Human Bottleneck</h1>
 
         <p>
           Tailor-made <abbr data-toggle="tooltip" title="Enterprise Resource Management">ERP</abbr> web application
@@ -100,32 +61,36 @@
         <div class="page-header">
           <h2>What?</h2>
         </div>
-        <p>
-          <mark>
-            Hugebag specializes in building <abbr title="Enterprise Resource Management">ERP</abbr> web application
-            for small and medium-sized businesses
-          </mark>
-        </p>
-        <div class="row">
+        <div class="row well vertical-align">
           <div class="col-sm-6">
-            <div class="jumbotron">Does your business have headaches like these?</div>
+            <h3 class="text-right" style="margin-top: 10px;">
+              Does your business have <span class="text-danger">headaches</span> like these?&nbsp;&nbsp;
+              <span class="glyphicon glyphicon-hand-right"></span>
+            </h3>
           </div>
           <div class="col-sm-6">
-            <div class="list-group" style="text-align: left;">
-              <h3 class="list-group-item-heading">
-                Operation bottlenecks served by human labor </h3>
+            <div class="list-group text-left" style="margin-bottom: 0;">
+              <h4 class="list-group-item-heading">
+                <span class="glyphicon glyphicon-exclamation-sign"></span> Operation bottlenecks served by
+                <span class="text-warning">human labor</span>
+              </h4>
 
-              <p class="list-group-item-text">
-                While you know that software can serve them efficiently </p>
+              <p class="list-group-item-text text-muted">
+                While you know that software can serve them much more efficiently </p>
 
-              <h3 class="list-group-item-heading">
-                Problems resulted from human mistake </h3>
+              <h4 class="list-group-item-heading" style="margin-top: 15px;">
+                <span class="glyphicon glyphicon-exclamation-sign"></span> Problems resulted from
+                <span class="text-warning">human mistake</span>
+              </h4>
 
-              <p class="list-group-item-text">
+              <p class="list-group-item-text text-muted">
                 While you know that software could have prevented them </p>
             </div>
           </div>
         </div>
+        <!--<p class="alert alert-success text-center" style="margin-bottom: 0; width: 50%;">If you do, Hugebag may be able to help you.</p>-->
+        <p class="alert alert-success" style="width: 400px; margin: 0 auto;">If you do, Hugebag may be able to help
+          you.</p>
       </div>
 
       <div id="why" class="row">
@@ -133,43 +98,224 @@
           <h2>Why?</h2>
         </div>
 
-        <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-          rem
-          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-          explicabo.
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-          dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-          sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-          magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-          suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui
-          in
-          ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
-          nulla pariatur? </p>
+        <div class="row well vertical-align">
+          <div class="col-sm-6">
+            <div class="list-group text-right" style="margin-bottom: 0;">
+              <h4 class="list-group-item-heading">
+                <span class="glyphicon glyphicon-info-sign"></span> Your <span class="text-primary">time</span> is more
+                valuable than you think </h4>
+
+              <p class="list-group-item-text text-muted" style="padding-left: 40px;">
+                Employee cost is high. Minimum wage is increasing. As an owner, your time is even more
+                precious and should only be spent on critical decision making, not menial labor </p>
+
+              <h4 class="list-group-item-heading" style="margin-top: 15px;">
+                <span class="glyphicon glyphicon-info-sign"></span> Human errors are detrimental to <span
+                  class="text-primary">morale</span>
+              </h4>
+
+              <p class="list-group-item-text text-muted" style="padding-left: 40px;">
+                Not only do human errors cost time to fix, it also destroys team spirit quickly, which in turn causes
+                costly turnover </p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <h3 class="text-left" style="margin-top: 10px;">
+              <span class="glyphicon glyphicon-hand-left"></span>&nbsp;&nbsp;Why should your business <span
+                class="text-info">care</span>? </h3>
+          </div>
+        </div>
+        <h3 style="margin: 40px 0 30px;">Why would you hire Hugebag?</h3>
+
+        <div id="hire-reasons" class="row equal" style="padding: 0 15px 0;">
+          <div class="col-sm-2">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-sm-2"><span class="glyphicon glyphicon-wrench"></span></div>
+                  <div class="col-sm-10">Software tailor-made to exact business situation</div>
+                </div>
+              </div>
+              <div class="panel-body">
+                Your human bottleneck likely involves operations that are not served by
+                <abbr data-toggle="tooltip" title="E.g. QuickBooks">off-the-shelf software</abbr>. We will
+                customize an app to serve that <strong>exact</strong> part of your operation
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-sm-2"><span class="glyphicon glyphicon-exclamation-sign"></span></div>
+                  <div class="col-sm-10">Big name consulting firms usually are quite expensive</div>
+                </div>
+              </div>
+              <div class="panel-body">
+                Large firm like IBM charges a premium because they have huge <strong>overhead</strong> (a.k.a. sales
+                team). We don't have much of that and it lets us price our work less
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-sm-2"><span class="glyphicon glyphicon-thumbs-up"></span></div>
+                  <div class="col-sm-10">10+ years of experience in developing software</div>
+                </div>
+              </div>
+              <div class="panel-body">
+                We have more than 10 years of experience in software development and employ industry best practices
+                to write software that is <strong>easy to change and secure</strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-sm-2"><span class="glyphicon glyphicon-briefcase"></span></div>
+                  <div class="col-sm-10">Knowledge of common business operations</div>
+                </div>
+              </div>
+              <div class="panel-body">
+                Experience with business functions such as quotations, purchase orders, invoices, inventory,
+                shipping (UPS, FedEx), marketplaces (Amazon, eBay, etc), sales promotions
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-sm-2"><span class="glyphicon glyphicon-cloud"></span></div>
+                  <div class="col-sm-10">Access your application anytime from anywhere</div>
+                </div>
+              </div>
+              <div class="panel-body">
+                Your application will be hosted in the <strong>cloud</strong> (we use
+                <a href="http://aws.amazon.com/">Amazon Web Services</a>) so it is always on and accessible from
+                wherever you do business
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-sm-2"><span class="glyphicon glyphicon-user"></span></div>
+                  <div class="col-sm-10">Support by the software developer directly</div>
+                </div>
+              </div>
+              <div class="panel-body">
+                You will be helped by the software developer <strong>who writes your app</strong>, not a technical
+                support on the other side of the globe with shallow knowledge of the app and your business
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-muted" style="margin-bottom: 0;">Also, if <em>Cantonese</em> is your first language, you
+          will feel right at home</p>
       </div>
 
       <div id="how" class="row">
         <div class="page-header">
           <h2>How?</h2>
         </div>
+        <div id="procedure" class="panel-group" style="width: 50%; margin: 0 auto;">
+          <div class="panel panel-info">
+            <div class="panel-heading">Exploration</div>
+            <div class="panel-body">
+              We will try to understand your business need, the scope and urgency of your project as well as your
+              budget to see if we can help you
+            </div>
+          </div>
+          <span class="glyphicon glyphicon-arrow-down"></span>
 
-        <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-          dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-          sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-          magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-          suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-          ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
-          nulla pariatur? </p>
+          <div class="panel panel-info">
+            <div class="panel-heading">Agreement</div>
+            <div class="panel-body">
+              If there is a consensus that Hugebag can help you, an agreement stating the rights and responsibilities
+              of both parties will be signed
+            </div>
+          </div>
+          <span class="glyphicon glyphicon-arrow-down"></span>
+
+          <div class="panel panel-info">
+            <div class="panel-heading">Design</div>
+            <div class="panel-body">
+              We will then start designing the application including its user interface, business logic architecture
+              and the database
+            </div>
+          </div>
+          <span class="glyphicon glyphicon-arrow-down"></span>
+          <span class="glyphicon glyphicon-arrow-up"></span>
+
+          <div class="panel panel-info">
+            <div class="panel-heading">Implementation</div>
+            <div class="panel-body">
+              This is the part that the application is brought into existence. We will sign up the services (e.g. AWS,
+              GoDaddy) needed for you, configure the server and database, write the code for business logic, etc.
+            </div>
+          </div>
+          <span class="glyphicon glyphicon-arrow-down"></span>
+          <span class="glyphicon glyphicon-arrow-up"></span>
+
+          <div class="panel panel-info">
+            <div class="panel-heading">Testing</div>
+            <div class="panel-body">
+              <p>We will utilize automated as well as manual testing to check if the application is performed as
+                expected.
+                Also, we will let you test the application and solicit your feedback.</p>
+
+              <p>The cycle of <span class="bg-primary">design <span class="glyphicon glyphicon-arrow-right"></span>
+                implementation <span class="glyphicon glyphicon-arrow-right"></span> testing</span> will continue until
+                the application is completed</p>
+            </div>
+          </div>
+          <span class="glyphicon glyphicon-arrow-down"></span>
+
+          <div class="panel panel-info">
+            <div class="panel-heading">Support</div>
+            <div class="panel-body">
+              After the application is put into production, you can continue to receive support from us if you choose.
+              Should your business situation changes or there is new requirement, we are happy to modify/enhance the
+              application for you
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="technology" class="row">
+        <div class="page-header">
+          <h2>Technology?</h2>
+        </div>
+        <p>Hugebag is experienced in various technologies/software/services including:</p>
+        <kbd>Ruby • Ruby on Rails • HTML • CSS • Sass • Bootstrap • JavaScript • jQuery • Git • SQL</kbd><br/>
+        <kbd>Apache • Nginx • Passenger • MySQL • NetSuite • Linux • Amazon EC2 • RDS • S3 • SES</kbd><br/>
+
+        <!--<div class="row" style="width: 50%; margin: 20px auto 0;">-->
+        <!--<div class="col-sm-3"><img src="img/ruby.png" alt="Ruby" /></div>-->
+        <!--<div class="col-sm-3"><img src="img/rails.png" alt="Ruby on Rails" /></div>-->
+        <!--<div class="col-sm-3"><img src="img/mysql.png" alt="MySQL" /></div>-->
+        <!--<div class="col-sm-3"><img src="img/aws.png" alt="Amazon Web Services" /></div>-->
+        <!--</div>-->
+        <div style="margin: 20px auto;">
+          <img src="img/ruby.png" alt="Ruby"/>&nbsp;&nbsp;
+          <img src="img/rails.png" alt="Ruby on Rails"/>&nbsp;&nbsp;
+          <img src="img/mysql.png" alt="MySQL"/>&nbsp;&nbsp;
+          <img src="img/aws.png" alt="Amazon Web Services"/>
+        </div>
+        <p class="text-muted small">*Trademarks belong to their respective owners*</p>
       </div>
 
       <div id="interested" class="row">
         <div class="page-header">
           <h2>Interested?</h2>
         </div>
-        <a href="mailto:consult@hugebag.com"><span class="glyphicon glyphicon-envelope"></span>
+        <a href="mailto:consult@hugebag.com" class="btn btn-primary btn-lg" role="button"><span
+            class="glyphicon glyphicon-envelope"></span>
           consult@hugebag.com</a>
       </div>
 

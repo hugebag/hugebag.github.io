@@ -4,14 +4,6 @@ body {
   text-align: center;
 }
 
-/* Should not have padding on both sides when screen is small */
-@media screen and (min-width: 900px) {
-  nav > .container-fluid {
-    padding-right: 100px;
-    padding-left: 100px;
-  }
-}
-
 .navbar-inverse {
   background-color: #7B479C;
 }
@@ -74,11 +66,18 @@ footer {
   align-items: center;
 }
 
-.panel-heading .row .col-sm-10 {
-  text-align: left;
-}
+@media screen and (min-width: 970px) {
+  /* Should not have padding on both sides when screen is small */
+  nav > .container-fluid {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
 
-@media screen and (min-width: 768px) {
+  .panel-heading .row .col-md-10 {
+    text-align: left;
+  }
+
+  /* Only for desktop screen or else the panels won't stack up on iPad */
   .equal, .equal > div[class*='col-'] {
     display: -webkit-box;
     display: -moz-box;

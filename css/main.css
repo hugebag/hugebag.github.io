@@ -1,12 +1,15 @@
 body {
   position: relative;
-  top: 80px;
+  top: 91px;
   text-align: center;
 }
 
-nav > .container-fluid {
-  padding-right: 100px;
-  padding-left: 100px;
+/* Should not have padding on both sides when screen is small */
+@media screen and (min-width: 900px) {
+  nav > .container-fluid {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
 }
 
 .navbar-inverse {
@@ -27,6 +30,16 @@ nav > .container-fluid {
   background-color: #6B479C;
 }
 
+/* To center the toggle button */
+.navbar-toggle {
+  margin-top: 25px;
+}
+
+/* So that the full menu is displayed without scroll bar */
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+  max-height: 500px;
+}
+
 .navbar-brand, .navbar-nav li a {
   line-height: 90px;
   height: 90px;
@@ -42,7 +55,6 @@ nav > .container-fluid {
   margin: 20px 0;
 }
 
-/*#technology .row img {*/
 #technology img {
   height: 100px;
 }

@@ -38,8 +38,18 @@ body {
   padding-top: 0;
 }
 
-#hire-reasons .panel-heading {
-  min-height: 80px;
+.jumbotron {
+  background-image: -webkit-linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../img/automate.jpg"); /*Safari 5.1-6*/
+  background-image: -o-linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../img/automate.jpg"); /*Opera 11.1-12*/
+  background-image: -moz-linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../img/automate.jpg"); /*Fx 3.6-15*/
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/automate.jpg");
+  background-size: cover;
+  height: 400px;
+  color: white;
+}
+
+.hire-reasons .panel-heading {
+  min-height: 40px;
 }
 
 #procedure .glyphicon-arrow-down,
@@ -73,6 +83,14 @@ footer {
     padding-left: 100px;
   }
 
+  .jumbotron {
+    background-position: 0 -200px;
+  }
+
+  #help {
+    width: 40%; margin: 0 auto;
+  }
+
   .panel-heading .row .col-md-10 {
     text-align: left;
   }
@@ -84,6 +102,6 @@ footer {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    flex:1 0 auto;
+    flex: 1 0 auto;
   }
 }

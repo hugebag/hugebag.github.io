@@ -39,10 +39,10 @@ body {
 }
 
 .jumbotron {
-  background-image: -webkit-linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../img/automate.jpg"); /*Safari 5.1-6*/
-  background-image: -o-linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../img/automate.jpg"); /*Opera 11.1-12*/
-  background-image: -moz-linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../img/automate.jpg"); /*Fx 3.6-15*/
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/automate.jpg");
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/automate.jpg"); /*Safari 5.1-6*/
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/automate.jpg"); /*Opera 11.1-12*/
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/automate.jpg"); /*Fx 3.6-15*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/automate.jpg");
   background-size: cover;
   height: 400px;
   color: white;
@@ -76,6 +76,14 @@ footer {
   align-items: center;
 }
 
+/* Need this so that anchors aren't covered up by the navbar */
+.jump-target:before {
+  content: "";
+  display: block;
+  height: 90px; /* Should be the same as the navbar height */
+  margin: -90px 0 0; /* The first parameter should be the negative of the navbar height*/
+}
+
 @media screen and (min-width: 970px) {
   /* Should not have padding on both sides when screen is small */
   nav > .container-fluid {
@@ -88,7 +96,8 @@ footer {
   }
 
   #help {
-    width: 40%; margin: 0 auto;
+    width: 40%;
+    margin: 0 auto;
   }
 
   .panel-heading .row .col-md-10 {

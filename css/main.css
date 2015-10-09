@@ -48,8 +48,24 @@ body {
   color: white;
 }
 
+div#example-headaches {
+  margin-top: 1.5em;
+}
+
 .hire-reasons .panel-heading {
   min-height: 40px;
+}
+
+#procedure {
+  width: 50%;
+}
+
+#example-headaches-accordion {
+  margin: 0 auto 1.5em;
+}
+
+#procedure {
+  margin: 0 auto;
 }
 
 #procedure .glyphicon-arrow-down,
@@ -97,7 +113,16 @@ footer {
 
   #help {
     width: 40%;
-    margin: 0 auto;
+    margin: 0 auto 1.5em;
+  }
+
+  #example-headaches-accordion {
+    width: 50%;
+  }
+
+  #give-us-shot {
+    width: 60%;
+    margin: 0 auto 0;
   }
 
   .panel-heading .row .col-md-10 {

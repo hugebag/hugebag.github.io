@@ -44,7 +44,7 @@ body {
   background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/automate.jpg"); /*Fx 3.6-15*/
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/automate.jpg");
   background-size: cover;
-  height: 450px;
+  height: 550px;
   color: white;
 }
 

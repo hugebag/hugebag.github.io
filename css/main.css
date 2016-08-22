@@ -73,6 +73,10 @@ div#example-headaches {
   margin: 20px 0;
 }
 
+#technology kbd a {
+  color: inherit;
+}
+
 #technology img {
   height: 100px;
 }
